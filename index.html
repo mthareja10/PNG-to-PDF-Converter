@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNG to PDF</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+    <h1>PNG <span style="color: black;">to</span> PDF</h1>
+    <p>Effortlessly convert your PNG images to PDF in seconds...</p>
+    <button class="uploadBtn" id="fileInputButton" style="margin-top: 3rem;">Select PNG images</button>
+    <input type="file" id="fileInput" accept="image/png" multiple style="display: none;" />
+    <p id="oR">or</p>
+    <div class="dragFiles" id="dragArea">
+        <p>Drop your images here</p>
+    </div>
+    <div id="fileList"></div>
+
+    <div id="uploadedFilesContainer"></div>
+    <button class="convertBtn" style="display: none; margin-top: 2rem;">Convert to PDF</button>
+    <button class="combineBtn" style="display: none; margin-top: 2rem;">Combine to PDF</button>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
